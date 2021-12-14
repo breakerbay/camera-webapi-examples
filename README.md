@@ -1,2 +1,2 @@
 # camera-webapi-examples
-Examples using the MediaDevices.getUserMedia() api to take photos
+Javascript examples using the MediaDevices.getUserMedia() api to take photos
