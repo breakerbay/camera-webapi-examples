@@ -23,9 +23,9 @@
     <li>
         <h2>Camera Image</h2>
         <div>
+            <input name="photo" type="file" accept="image/*" onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])">
             <!-- <img id="output" src="" width="100" height="100"> -->
             <img id="output" src="">
-            <input name="photo" type="file" accept="image/*" onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])">
         </div>
     </li>
 </ul>
