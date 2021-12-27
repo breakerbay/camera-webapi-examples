@@ -4,12 +4,32 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Camera Web API Examples</title>
+    <style>
+      img {
+        width: 100%;
+        height: 100%;
+        max-width: 50rem;
+        padding: 2rem;
+        object-fit: contain;
+      }
+    </style>
 </head>
 <body>
 <h1>Camera Web API Examples</h1>
 <ul>
-    <li><a href="src/codepen-by-chris/index.html">A CodePen by Chris</a> detects camera, plays, pauses and takes snapshot.
-        Indicates 3 cameras on Note 9 but environment camera doesn't work</li>
+    <li><a href="src/codepen-by-chris/index.html">A CodePen by Chris</a> detects camera, plays, pauses and takes snapshot.</li>
+    <li><!-- <input class="card_input" v-on:change="appCapture($event)" type="file" accept="image/*" capture="camera" /> --> Capture with on:change</li>
+    <li><input class="card_input" type="file" accept="image/*" capture="camera" onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])"/></li>
+    <li><a href="camera-capture-button.html">camera-capture</a></li>
+    <li><a href="image-to-blog.html">image-to-blog</a></li>
+    <li>
+        <h2>Camera Image</h2>
+        <div>
+            <input name="photo" type="file" accept="image/*" onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])">
+            <!-- <img id="output" src="" width="100" height="100"> -->
+            <img id="output" src="pencils.jpg">
+        </div>
+    </li>
 </ul>
 </body>
 </html>

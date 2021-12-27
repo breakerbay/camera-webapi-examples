@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Nice image capture button</title>
+    <style>
+      label.cameraButton {
+        display: inline-block;
+        margin: 1em 0;
+
+        /* Styles to make it look like a button */
+        padding: 0.5em;
+        border: 2px solid #666;
+        border-color: #eee #ccc #ccc #eee;
+        background-color: #ddd;
+      }
+
+      /* Look like a clicked/depressed button */
+      label.cameraButton:active {
+        border-color: #ccc #eee #eee #ccc;
+      }
+
+      /* This is the part that actually hides the 'Choose file' text box for camera inputs */
+      label.cameraButton input[accept*="camera"] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <label class="cameraButton"
+      >Take a picture
+      <input type="file" accept="image/*;capture=camera" />
+    </label>
+  </body>
+</html>
