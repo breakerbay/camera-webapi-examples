@@ -31,5 +31,11 @@
         </div>
     </li>
 </ul>
+<script>
+  var el = document.createElement('input')
+  var supported = el.capture != undefined
+  console.log('capture supported: '+supported)
+  alert('capture supported: '+supported)
+</script>
 </body>
 </html>
