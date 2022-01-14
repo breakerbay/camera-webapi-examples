@@ -42,6 +42,26 @@
         </div>
     </li>
 </ul>
+<article>
+    <section>
+        <h2>Capture Supported</h2>
+        <ul>
+            <li><div id="capture-supported"></div></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Capture Works on:</h2>
+        <ul>
+            <li>Samsung Note 9 -  Chrome</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Capture Doesn't Works on:</h2>
+        <ul>
+            <li>Samsung Note 9 - Samsung Internet Browser</li>
+        </ul>
+    </section>
+</article>
 <footer>
     <h2>Other Examples</h2>
     <ul>
@@ -56,7 +76,7 @@
   var el = document.createElement('input')
   var supported = el.capture != undefined
   console.log('capture supported: ' + supported)
-  alert('capture supported: ' + supported)
+  document.getElementById("capture-supported").innerHTML = "supported: " + supported;
 </script>
 </body>
 </html>

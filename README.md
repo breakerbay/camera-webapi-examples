@@ -1,4 +1,7 @@
 # camera-webapi-examples
+
+Published on Netlify [camera-webapi-examples](https://camera-capture-example.netlify.app)
+
 Javascript examples using the MediaDevices.getUserMedia() api to take photos
 
 TODO - Get front camera working
