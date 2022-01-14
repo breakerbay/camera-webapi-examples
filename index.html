@@ -18,6 +18,14 @@
 <h1>Camera Capture Examples</h1>
 <ul>
     <li>
+        <h2>Capture Supported</h2>
+        <ul>
+            <li>
+                <div id="capture-supported"></div>
+            </li>
+        </ul>
+    </li>
+    <li>
         <h2>Camera Image</h2>
         <input class="card_input" type="file" accept="image/*" capture="camera"
                onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])"/>
@@ -37,12 +45,6 @@
     </li>
 </ul>
 <article>
-    <section>
-        <h2>Capture Supported</h2>
-        <ul>
-            <li><div id="capture-supported"></div></li>
-        </ul>
-    </section>
     <section>
         <h2>Capture Works on:</h2>
         <ul>
